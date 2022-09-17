@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --BrightYellow: hsl(71, 73%, 54%);
+    --LightGray: hsl(204, 43%, 93%);
+    --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--LightGray);
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2, min-content;
+    padding: 30px;
+}
+
+section {
+    padding: 40px 32px;
+    line-height: 1.5;
+}
+
+.community {
+    grid-column: 1/3;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.community h1 {
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+
+.community h3 {
+    color: var(--BrightYellow);
+    margin-bottom: 10px;
+}
+
+.community p {
+    color: var(--GrayishBlue);
+}
+
+.subscrib {
+    background-color: #2bb3b1;
+    color: #fff;
+}
+
+.subscrib h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.amount {
+    font-size: 25px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+span {
+    color: #fff;
+    font-size: 15px;
+}
+
+.subscrib p {
+    color: var(--LightGray);
+    margin-bottom: 30px;
+}
+
+.subscrib button {
+    width: 100%;
+    border: none;
+    border-radius: 6px;
+    background-color: var(--BrightYellow);
+    padding: 20px 50px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.subscrib button:hover {
+    background-color: #95b21f;
+}
+
+.why {
+    background-color: #4abebd;
+}
+
+.why h2 {
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    color: var(--LightGray);
+}
+
+footer {
+    align-self: flex-end;
+    font-size: 14px;
+}
+
+.attribution {
+    padding: 10px 0;
+}
+
+footer a {
+    color: purple;
+}
+
+@media(max-width:750px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+        padding: ;
+    }
+}
